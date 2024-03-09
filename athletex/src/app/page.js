@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import Link from "next/link";
-import FAQ from "../components/FAQ.jsx";
+import FAQ from "./components/FAQ.jsx";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -92,7 +92,7 @@ export default function Home() {
 
             <Link
               className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto"
-              href={"/app/login"}
+              href={"/login"}
             >
               Sign In
             </Link>
