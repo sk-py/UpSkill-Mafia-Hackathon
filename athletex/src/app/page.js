@@ -1,5 +1,6 @@
 "use client";
 
+import FAQ from "../Components/FAQ";
 import { useState } from "react";
 
 import Link from "next/link";
@@ -11,9 +12,11 @@ export default function Home() {
       <section className="bg-white dark:bg-gray-900">
         <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
           <div className="flex items-center justify-between">
-            <span className="flex items-center justify-center h-max text-2xl text-white">
-              Athlete
-              <span className="font-bold text-blue-600 text-3xl ">X</span>
+            <span className="flex items-center  p-1 justify-center h-max text-2xl dark:text-white font-sans">
+              <span className="mb-1">Athlete</span>
+              <span className="font-bold text-blue-600 text-3xl font-serif mt-1">
+                X
+              </span>
             </span>
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
@@ -89,7 +92,7 @@ export default function Home() {
 
             <Link
               className="block px-5 py-2 mt-4 text-sm text-center text-white capitalize bg-blue-600 rounded-lg lg:mt-0 hover:bg-blue-500 lg:w-auto"
-              href={"/AuthPages"}
+              href={"/app/login"}
             >
               Sign In
             </Link>
@@ -109,9 +112,6 @@ export default function Home() {
             <button className="px-5 py-2 mt-6 text-sm font-medium leading-5 text-center text-white capitalize bg-blue-600 rounded-lg hover:bg-blue-500 lg:mx-0 lg:w-auto focus:outline-none">
               Join Now
             </button>
-            <p className="mt-3 text-sm text-gray-400 ">
-              No credit card required
-            </p>
           </div>
 
           <div className="flex justify-center mt-10">
@@ -123,6 +123,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <FAQ />
     </>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 export const Login = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
