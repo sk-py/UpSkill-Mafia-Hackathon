@@ -1,6 +1,6 @@
 "use client";
 
-import FAQ from "../Components/FAQ";
+import FAQ from "../components/FAQ";
 import { useState } from "react";
 
 import Link from "next/link";
