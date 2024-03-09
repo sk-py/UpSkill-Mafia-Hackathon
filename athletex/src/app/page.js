@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 import Link from "next/link";
-import FAQ from "@/components/FAQ";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
