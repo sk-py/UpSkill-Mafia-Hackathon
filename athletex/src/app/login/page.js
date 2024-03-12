@@ -20,12 +20,11 @@ const Login = () => {
                 X
               </span>
             </span>
-            <h1 className="text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white">
+            <h1 className="text-2xl font-semibold tracking-wider text-center text-gray-800 capitalize dark:text-white">
               Get your free account now.
             </h1>
-            <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Let’s get you all set up so you can verify your personal account
-              and begin setting up your profile.
+            <p className="mt-4 text-gray-500 text-center dark:text-gray-400">
+              Let’s get you all set up!{" "}
             </p>
             {/* <div className="mt-6">
               <h1 className="text-gray-500 dark:text-gray-300">
@@ -131,17 +130,17 @@ const Login = () => {
               </div>
               <div>
                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                  Password
+                  Town or Locality
                 </label>
                 <input
-                  type="password"
-                  placeholder="Enter your password"
+                  type="text"
+                  placeholder="Kalwa, etc.."
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
               <div>
                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                  Confirm password
+                  Set Password
                 </label>
                 <input
                   type="password"
