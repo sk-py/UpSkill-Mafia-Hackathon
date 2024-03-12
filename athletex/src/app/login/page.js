@@ -5,14 +5,21 @@ const Login = () => {
     <section className="bg-white dark:bg-gray-900">
       <div className="flex justify-center min-h-screen">
         <div
-          className="hidden bg-cover lg:block lg:w-2/5"
+          className="hidden bg-contain lg:block lg:w-2/5"
           style={{
             backgroundImage:
-              'url("https://images.unsplash.com/photo-1494621930069-4fd4b2e24a11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80")',
+              'url("https://i.pinimg.com/originals/20/0b/82/200b82e54a3b3336a54e473eeabac506.jpg")',
+            filter: "saturate(50%)",
           }}
         />
         <div className="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
           <div className="w-full">
+            <span className="flex items-center  p-5 justify-center h-max text-4xl dark:text-white font-sans">
+              <span className="mb-1">Athlete</span>
+              <span className="font-bold text-blue-600 text-5xl font-serif mt-1">
+                X
+              </span>
+            </span>
             <h1 className="text-2xl font-semibold tracking-wider text-gray-800 capitalize dark:text-white">
               Get your free account now.
             </h1>
@@ -20,7 +27,7 @@ const Login = () => {
               Let’s get you all set up so you can verify your personal account
               and begin setting up your profile.
             </p>
-            <div className="mt-6">
+            {/* <div className="mt-6">
               <h1 className="text-gray-500 dark:text-gray-300">
                 Select type of account
               </h1>
@@ -60,7 +67,7 @@ const Login = () => {
                   <span className="mx-2">worker</span>
                 </button>
               </div>
-            </div>
+            </div> */}
             <form className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
               <div>
                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
@@ -84,21 +91,41 @@ const Login = () => {
               </div>
               <div>
                 <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                  Phone number
-                </label>
-                <input
-                  type="text"
-                  placeholder="XXX-XX-XXXX-XXX"
-                  className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                />
-              </div>
-              <div>
-                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
                   Email address
                 </label>
                 <input
                   type="email"
                   placeholder="johnsnow@example.com"
+                  className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                  Country
+                </label>
+                <input
+                  type="text"
+                  placeholder="India, etc.."
+                  className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                  State
+                </label>
+                <input
+                  type="text"
+                  placeholder="Maharashtra, etc.."
+                  className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                />
+              </div>
+              <div>
+                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+                  City
+                </label>
+                <input
+                  type="text"
+                  placeholder="Thane, etc.."
                   className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 import FAQ from "./components/FAQ.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -124,6 +125,7 @@ export default function Home() {
         </div>
       </section>
       <FAQ />
+      <Footer />
     </>
   );
 }
