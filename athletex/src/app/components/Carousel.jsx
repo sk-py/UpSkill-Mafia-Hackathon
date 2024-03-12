@@ -16,7 +16,7 @@ const Carousel = () => {
           {" "}
           Don't miss out on your chance to shine!
         </p>
-        <p className="lg:w-[60%] w-[90%] mx-auto my-8 text-slate-200 ">
+        <p className="lg:w-[60%] w-[90%] mx-auto my-8 text-slate-600 dark:text-slate-200 ">
           Discover upcoming events and competitions, Engage with like-minded
           individuals and showcase your skills and talents. Take the first step
           towards success and achieve your goals. So what are you waiting for?
@@ -28,7 +28,7 @@ const Carousel = () => {
           autoplay
           autoplaySpeed={4}
           speed={10}
-          onReady={() => console.log("I am ready")}
+          //   onReady={() => console.log("I am ready")}
         >
           {ImagesArray.map((item, index) => (
             <div
