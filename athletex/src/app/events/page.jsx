@@ -116,8 +116,8 @@ const page = () => {
   return (
     <>
       <Header link={path} />
-      <div className="w-[95vw] m-auto flex flex-col items-center justify-center gap-4 mt-6">
-        <span className="text-center text-3xl">Upcoming events</span>
+      <div className="w-[95vw] m-auto flex flex-col items-center mb-5 justify-center gap-4 mt-6">
+        <span className="text-center text-3xl font-bold ">Upcoming events</span>
         {DummyCardsArray.map((event, index) => {
           return (
             <EventCard
