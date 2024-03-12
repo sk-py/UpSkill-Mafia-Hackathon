@@ -16,12 +16,11 @@ const Carousel = () => {
           {" "}
           Don't miss out on your chance to shine!
         </p>
-        <p className="w-[60%] mx-auto my-8 text-slate-200 ">
-          Discover upcoming events and competitions that will help you excel and
-          stay ahead of the game. Engage with like-minded individuals and
-          showcase your skills and talents. With our help, you can take the
-          first step towards success and achieve your goals. So what are you
-          waiting for? Start exploring and discover what's waiting for you!
+        <p className="lg:w-[60%] w-[90%] mx-auto my-8 text-slate-200 ">
+          Discover upcoming events and competitions, Engage with like-minded
+          individuals and showcase your skills and talents. Take the first step
+          towards success and achieve your goals. So what are you waiting for?
+          Start exploring and discover what's waiting for you!
         </p>
       </span>
       <div className="w-[80%] m-auto">
@@ -34,12 +33,12 @@ const Carousel = () => {
           {ImagesArray.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-center rounded h-52 w-64 object-cover "
+              className="flex items-center justify-center mx-2 rounded h-52 w-64 object-cover "
             >
               <img
                 src={item}
                 alt={`Carousel image - ${index}`}
-                className="w-full h-full"
+                className="w-full h-full rounded-lg "
               />
             </div>
           ))}
