@@ -63,7 +63,7 @@ const Header = ({ link }) => {
     //     </a>
     //   </div>
     // </nav>
-    <div className="bg-gray-200 dark:bg-gray-800">
+    <div className="bg-gray-200 dark:bg-gray-800 sticky top-0 left-0 z-10">
       <div className="container flex items-center px-6 py-4 mx-auto overflow-x-auto whitespace-nowrap">
         <Link href="/" className="text-gray-600 dark:text-gray-200">
           <svg
