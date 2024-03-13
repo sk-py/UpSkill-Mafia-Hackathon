@@ -10,7 +10,7 @@ const Carousel = () => {
     "https://wildcattimes.files.wordpress.com/2014/01/new-picture-12.png",
   ];
   return (
-    <div className="w-[98vw] my-14 ">
+    <div className="w-[98vw] my-14 py-20 ">
       <span className=" w-[80%] text-center">
         <p className="text-center text-2xl font-bold ">
           {" "}
