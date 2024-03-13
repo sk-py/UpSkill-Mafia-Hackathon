@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
-        <nav className="container p-6 mx-auto lg:flex lg:justify-between lg:items-center">
+        <nav className="container p-2 px-3 lg:p-6 mx-auto lg:flex lg:justify-between lg:items-center">
           <div className="flex items-center justify-between">
             <span className="flex items-center  p-1 justify-center h-max text-2xl dark:text-white font-sans">
               <span className="mb-1">Athlete</span>

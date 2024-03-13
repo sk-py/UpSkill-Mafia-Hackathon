@@ -7,15 +7,21 @@ const page = () => {
             <div className="lg:w-3/4 lg:px-6">
               <img
                 className="object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl"
-                src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                src="https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXRobGV0aWN8ZW58MHx8MHx8fDA%3D"
                 alt=""
               />
               <div>
                 <p className="mt-6 text-sm text-blue-500 uppercase">
                   Want to know
                 </p>
-                <h1 className="max-w-lg mt-4 text-2xl font-semibold leading-tight text-gray-800 dark:text-white">
-                  What do you want to know about UI
+                <h1 className="max-w-md mt-4 text-xl font-semibold leading-tight text-gray-800 dark:text-white">
+                  Join us for the adrenaline-fueled Sprinting Championship,
+                  where athletes from around the nation will compete for glory
+                  and honor! Experience the thrill of speed at our Sprinting
+                  Extravaganza, featuring top-notch athletes showcasing their
+                  agility and prowess on the track. Get ready to witness the
+                  ultimate showdown of speed at the Sprinting Spectacular, where
+                  every stride counts and champions are made!
                 </h1>
                 <div className="flex items-center mt-6">
                   <img
@@ -36,16 +42,16 @@ const page = () => {
             </div>
             <div className="mt-8 lg:w-1/4 lg:mt-0 lg:px-6">
               <div>
-                <h3 className="text-blue-500 capitalize">Design instument</h3>
+                <h3 className="text-blue-500 capitalize">Mumbai Marathon</h3>
                 <a
                   href="#"
                   className="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 "
                 >
-                  How to raise $100k+ by using blox ui kit on your design
+                  Organised by TCS and Tata Group Of Companies
                 </a>
               </div>
               <hr className="my-6 border-gray-200 dark:border-gray-700" />
-              <div>
+              {/* <div>
                 <h3 className="text-blue-500 capitalize">UI Resource</h3>
                 <a
                   href="#"
@@ -73,7 +79,7 @@ const page = () => {
                 >
                   Top 10 Ui kit you can get on Blox's collection.
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

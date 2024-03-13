@@ -140,9 +140,9 @@ const Buddies = () => {
 
   return (
     <>
-      <Header link={path} />
+      {/* <Header link={path} /> */}
       <div className="lg:w-[95vw] w-screen flex flex-col items-center justify-center m-auto overflow-x-hidden">
-        <div className="flex items-center  gap-x-6 flex-row lg:w-[70%] overflow-x-scroll p-3 rounded-full custom-scrollbar-1 bg-blue-950 ">
+        <div className="flex items-center  gap-x-6 flex-row w-full lg:w-[70%] overflow-x-scroll p-3 lg:rounded-full custom-scrollbar-1 bg-blue-950 ">
           {DummyCardsArray.map((item, index) => {
             return (
               <img
