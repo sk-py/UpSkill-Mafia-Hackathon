@@ -1,12 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import { usePathname } from "next/navigation";
 import { PathFinder } from "../Utils/PathFinder";
 import EventCard from "../components/EventCard";
 
 const page = () => {
+  const [isLoading, setisLoading] = useState(true);
+
+  // if (typeof window !== "undefined") {
+  //   window.onload = async function () {
+  //     await setTimeout(async () => {
+  //       await setisLoading(!isLoading);
+  //     }, 200);
+  //   };
+  // }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setisLoading(!isLoading);
+    }, 300);
+  }, []);
+
   const pathname = usePathname();
   const path = PathFinder(pathname);
 
@@ -118,19 +134,45 @@ const page = () => {
       <Header link={path} />
       <div className="w-[95vw] m-auto flex flex-col items-center mb-5 justify-center gap-4 mt-6">
         <span className="text-center text-3xl font-bold ">Upcoming events</span>
-        {DummyCardsArray.map((event, index) => {
-          return (
-            <EventCard
-              happeningOn={event.happeningOn}
-              location={event.location}
-              eventName={event.eventName}
-              description={event.description}
-              postedBy={event.postedBy}
-              profileUrl={event.profileUrl}
-              key={index}
-            />
-          );
-        })}
+        {!isLoading ? (
+          DummyCardsArray.map((event, index) => {
+            return (
+              <EventCard
+                happeningOn={event.happeningOn}
+                location={event.location}
+                eventName={event.eventName}
+                description={event.description}
+                postedBy={event.postedBy}
+                profileUrl={event.profileUrl}
+                key={index}
+              />
+            );
+          })
+        ) : (
+          <>
+            <div className="w-full max-w-md mx-auto animate-pulse p-9">
+              <h1 className="h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600" />
+              <p className="w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+            </div>
+            <div className="w-full max-w-md mx-auto animate-pulse p-9">
+              <h1 className="h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600" />
+              <p className="w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+            </div>
+            <div className="w-full max-w-md mx-auto animate-pulse p-9">
+              <h1 className="h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600" />
+              <p className="w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+              <p className="w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700" />
+            </div>
+          </>
+        )}
       </div>
     </>
   );
