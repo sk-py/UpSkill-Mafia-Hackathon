@@ -5,11 +5,11 @@ const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div className="relative inline-block">
+      <div className="relative inline-block ">
         {/* Dropdown toggle button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="relative z-10 flex items-center p-2 text-sm text-gray-600 bg-white border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:ring dark:text-white dark:bg-gray-800 focus:outline-none"
+          className="relative z-10 flex items-center p-2 text-sm text-gray-600 bg-white border border-transparent rounded-md focus:border-blue-500 focus:ring-opacity-40 dark:focus:ring-opacity-40 focus:ring-blue-300 dark:focus:ring-blue-400 focus:ring dark:text-white dark:bg-gray-800 focus:outline-none lg:mt-0 mt-4 "
         >
           <span className="mx-1">Jane Doe</span>
           <svg
@@ -27,7 +27,7 @@ const DropDown = () => {
 
         {/* Dropdown menu */}
         {isOpen && (
-          <div className="absolute right-0 z-20 w-56 py-2 mt-2 overflow-hidden origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800">
+          <div className="absolute lg:right-0  z-20 w-56 py-2 mt-2 overflow-hidden origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800">
             <a
               href="#"
               className="flex items-center p-3 -mt-2 text-sm text-gray-600 transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"

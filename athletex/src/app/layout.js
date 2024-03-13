@@ -1,22 +1,25 @@
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer.jsx";
-// import Header from "./components/Header";
+import { usePathname } from "next/navigation";
+import { metadata } from "./MetaDeta";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "AtheleteX",
-  description: "Community for Athelete's ",
-};
-
 export default function RootLayout({ children }) {
+  const path = usePathname();
   return (
     <html lang="en">
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </head>
       <body className={`${inter.className} bg-white dark:bg-gray-900`}>
-        {/* <Header /> */}
+        {path !== "/login" && <Navbar />}
         {children}
-        {/* <Footer /> */}
+        {path !== "/login" && <Footer />}
       </body>
     </html>
   );
