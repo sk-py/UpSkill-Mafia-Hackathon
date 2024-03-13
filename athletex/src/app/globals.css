@@ -25,6 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.custom-scrollbar-1{
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
 
 @layer utilities {
   .text-balance {

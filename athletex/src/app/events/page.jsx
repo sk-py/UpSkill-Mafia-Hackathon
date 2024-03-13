@@ -9,17 +9,9 @@ import EventCard from "../components/EventCard";
 const page = () => {
   const [isLoading, setisLoading] = useState(true);
 
-  // if (typeof window !== "undefined") {
-  //   window.onload = async function () {
-  //     await setTimeout(async () => {
-  //       await setisLoading(!isLoading);
-  //     }, 200);
-  //   };
-  // }
-
   useEffect(() => {
     setTimeout(() => {
-      setisLoading(!isLoading);
+      setisLoading(!isLoading); //* This Function is added for diplaying demo skeleton and will be changed when fetching data from actual database using Api's
     }, 300);
   }, []);
 
